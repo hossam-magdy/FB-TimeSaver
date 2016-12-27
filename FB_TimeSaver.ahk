@@ -1,4 +1,3 @@
-﻿;#NoTrayIcon
 #Persistent
 #SingleInstance FORCE
 #MaxMem 5
@@ -73,7 +72,7 @@ HttpObj.SetTimeouts(10000,10000,10000,10000) ;Set timeouts to x seconds
 CheckLogIn:
 ;MsgBox, Checking Log In State
 Resp := ""
-HttpObj.Open("GET","https://m.facebook.com/")
+HttpObj.Open("GET","https://mbasic.facebook.com/")
 setRequestHeaders(HttpObj)
 try HttpObj.Send()
 getResponseHeaders(HttpObj)
@@ -107,7 +106,7 @@ if(IsDeveloper){
 	InputBox, email,Login , Username`, Email or Phone, , InputBoxWidth, InputBoxHeight, , , , 30
 	InputBox, password, Login, Password, HIDE, InputBoxWidth, InputBoxHeight, , , 
 }
-loginURL := "https://m.facebook.com/login.php"
+loginURL := "https://mbasic.facebook.com/login.php"
 lsd  := getFormHiddenVal(Resp, "lsd")
 m_ts := getFormHiddenVal(Resp, "m_ts")
 li   := getFormHiddenVal(Resp, "li")
@@ -175,7 +174,7 @@ Goto, CheckLogIn
 CheckPoint_SecurityCode:
 SecurityCode:
 SecurityCode1:
-checkpointURL := "https://m.facebook.com/login/checkpoint/"
+checkpointURL := "https://mbasic.facebook.com/login/checkpoint/"
 InputBox, approvals_code, Security Code, Security Code is required :, , InputBoxWidth, InputBoxHeight
 lsd := getFormHiddenVal(Resp, "lsd")
 nh  := getFormHiddenVal(Resp, "nh")
@@ -212,7 +211,7 @@ Goto, CheckLogIn
 
 
 CheckPoint_RememberBrowser: ;;;;;;;;;;;;;;;; REMEMBER BROWSER
-checkpointURL := "https://m.facebook.com/login/checkpoint/"
+checkpointURL := "https://mbasic.facebook.com/login/checkpoint/"
 if(AskRememberBrowser){
 	MsgBox, 4, FB Time Saver, Remember {FB TimeSaver} such that`r`nyou do not have to enter security code again ?, 60
 	IfMsgBox Yes
@@ -371,7 +370,7 @@ Check:
 	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 	checkNotificationsAndMessagesRequest:
 	Resp := ""
-	HttpObj.Open("GET","https://m.facebook.com/menu/bookmarks")
+	HttpObj.Open("GET","https://mbasic.facebook.com/menu/bookmarks")
 	setRequestHeaders(HttpObj)
 	try HttpObj.Send()
 	getResponseHeaders(HttpObj)
@@ -620,4 +619,3 @@ analyseResponse(Resp){
 	;FileAppend, Unknown %Resp%, %AppLogDirectory%\Resp.htm
 	Return "Unknown"
 }
-
