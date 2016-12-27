@@ -1,4 +1,4 @@
-﻿#Persistent
+#Persistent
 #SingleInstance FORCE
 #MaxMem 5
 ;#MaxHotkeysPerInterval 10000
@@ -631,4 +631,3 @@ analyseResponse(Resp){
 	;FileAppend, Unknown %Resp%, %AppLogDirectory%\Resp.htm
 	Return "Unknown"
 }
-
