@@ -1,4 +1,4 @@
-#Persistent
+﻿#Persistent
 #SingleInstance FORCE
 #MaxMem 5
 ;#MaxHotkeysPerInterval 10000
@@ -6,6 +6,18 @@
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 ;SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+; Download:
+; AHK & Ahk2Exe:			https://autohotkey.com/download/1.1/
+; * The NEW Ahk2Exe.exe:	https://fincs.ahk4.net/files/					(size > 800 KB: supports "Directives": http://fincs.ahk4.net/Ahk2ExeDirectives.htm)
+; MPRESS (compress exe):	https://autohotkey.com/mpress/mpress_web.htm	(put mpress.exe with Ahk2exe.exe)
+; SciTE4AutoHotkey:			https://fincs.ahk4.net/scite4ahk/
+;@Ahk2Exe-SetDescription	FB-TimeSaver
+;@Ahk2Exe-SetName			FB-TimeSaver
+;@Ahk2Exe-SetVersion		1.20160303
+;@Ahk2Exe-SetCopyright		Copyrigh © 2016 by Hossam Magdy
+;@Ahk2Exe-UseResourceLang	0x0409
+;@Ahk2Exe-SetMainIcon		icon.ico
+;;@Ahk2Exe-AddResource		icon_alert.ico (not yet supported from fincs: https://fincs.ahk4.net/Ahk2ExeDirectives.htm)
 
 ;******* TODO : 
 ;- Save tmp to Env
@@ -619,3 +631,4 @@ analyseResponse(Resp){
 	;FileAppend, Unknown %Resp%, %AppLogDirectory%\Resp.htm
 	Return "Unknown"
 }
+
