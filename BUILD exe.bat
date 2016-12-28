@@ -8,4 +8,3 @@ taskkill /F /IM FB_TimeSaver.exe >nul 2>&1
 
 echo Done.
 pause
-
