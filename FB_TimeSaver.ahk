@@ -545,6 +545,7 @@ menuHandler(){
 	global Notify_Sound
 	global Notify_Icon
 	global CheckEvery
+	global IniSettings_File
 	global Version
 	if ( A_ThisMenuItem=="About" ){
 		MsgBox, 64, FB Time Saver, { FB Time Saver v%Version% }`r`n`r`n`r`nAre you spending much time browing the facebook news feed or checking if a friend sent you a message ?`r`n`r`nThis desktop software can check your account frequently for you & if you have any Notifications, Messages or FriendRequests it can inform you by:`r`n- TrayTip desktop notification (Hotkey: LeftWin + LeftShift)`r`n- Sound alert`r`n- Tray icon`r`nYou can also switch them off, if you want.`r`n`r`nSave your time (sorry facebook).`r`n`r`n`r`nDeveloped by:`r`nHossam Magdy`r`nhossam.magdy@ieee.org
