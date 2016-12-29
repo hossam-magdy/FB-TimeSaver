@@ -3,8 +3,14 @@ An AutoHotKey script that periodically checks facebook account for any new messa
 
 toDo
 =====================
-- Option/Ask to save user+pass for future logins
-- Extract INTEGER of Notif, Messages, FriendReq
-- Alert for the only INCREMENT of notifications, not decrement
-- Option to alert at what of the three (Notif, Messages, FriendReq)
-- Option of Notification ACKNOWLEDGMENT
+- (done) Option/Ask to save user+pass for future logins
+- (done) Extract INTEGER of Notif, Messages, FriendReq
+- (done) Alert for the only INCREMENT of notifications, not decrement
+- Logout option : (logoutURL) var is ready
+- Option to alert at which of the three (Notif, Messages, FriendReq)
+- ~ Option of Notification ACKNOWLEDGMENT
+- More than one login simultaneously (SingleInstance OFF)
+- xXx Use "Microsoft.XmlHttp" OR "InternetExplorer.Application" instead of "WinHttp.WinHttpRequest"
+	if (window.XMLHttpRequest) var http = new XMLHttpRequest();
+	else var http = new ActiveXObject("microsoft.xmlhttp");
+	// OR ComObjCreate("InternetExplorer.Application")

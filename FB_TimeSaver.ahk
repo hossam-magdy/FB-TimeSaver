@@ -19,17 +19,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;@Ahk2Exe-SetMainIcon		icon.ico
 ;;@Ahk2Exe-AddResource		icon_alert.ico (not yet supported from fincs: https://fincs.ahk4.net/Ahk2ExeDirectives.htm)
 
-;******* TODO : 
-;- Save tmp to Env
-;- SingleInstance OFF
-;- Logout option : (logoutURL) var is ready
-;- Get # of Not,Mes,Fr & operate based on it
-;- xXx Use "Microsoft.XmlHttp" OR "InternetExplorer.Application" instead of "WinHttp.WinHttpRequest"
-;if (window.XMLHttpRequest) var http = new XMLHttpRequest();
-;else var http = new ActiveXObject("microsoft.xmlhttp");
-; OR ComObjCreate("InternetExplorer.Application")
-;*******
-
 ;Restart:
 Menu, TRAY, Icon, *, 1, 1
 
