@@ -16,11 +16,13 @@ if exist "%Ahk2Exe%" (
 		exit
 	) else (
 		echo.
-		echo Download Ahk2Exe "recommended this version", to build the exe file, :
-		echo Direct link: https://github.com/hossam-magdy/FB-TimeSaver/releases/download/Ahk2Exe-AIO/Ahk2Exe-AIO.zip
-		echo    Page:     https://github.com/hossam-magdy/FB-TimeSaver/releases/tag/Ahk2Exe-AIO
-		::start "" "https://github.com/hossam-magdy/FB-TimeSaver/releases/tag/Ahk2Exe-AIO"
-		::start "" "https://github.com/hossam-magdy/FB-TimeSaver/releases/download/Ahk2Exe-AIO/Ahk2Exe-AIO.zip"
+		echo - Download Ahk2Exe "recommended this version", to build the exe file, :
 		echo.
+		echo https://github.com/hossam-magdy/FB-TimeSaver/releases/download/Ahk2Exe-AIO/Ahk2Exe-AIO.zip
+		::echo    Page:     https://github.com/hossam-magdy/FB-TimeSaver/releases/tag/Ahk2Exe-AIO
+		echo.
+		echo - extract the zip file here then re-run this file
+		echo.
+		pause
 	)
 )
