@@ -17,10 +17,10 @@ if exist "%Ahk2Exe%" (
 	) else (
 		echo.
 		echo Download Ahk2Exe "recommended this version", to build the exe file, :
+		echo Direct link: https://github.com/hossam-magdy/FB-TimeSaver/releases/download/Ahk2Exe-AIO/Ahk2Exe-AIO.zip
 		echo    Page:     https://github.com/hossam-magdy/FB-TimeSaver/releases/tag/Ahk2Exe-AIO
-		echo Direct link: https://github.com/hossam-magdy/FB-TimeSaver/archive/Ahk2Exe-AIO.zip
 		::start "" "https://github.com/hossam-magdy/FB-TimeSaver/releases/tag/Ahk2Exe-AIO"
-		::start "" "https://github.com/hossam-magdy/FB-TimeSaver/archive/Ahk2Exe-AIO.zip"
+		::start "" "https://github.com/hossam-magdy/FB-TimeSaver/releases/download/Ahk2Exe-AIO/Ahk2Exe-AIO.zip"
 		echo.
 	)
 )
